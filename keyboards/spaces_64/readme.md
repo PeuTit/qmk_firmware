@@ -1,20 +1,26 @@
-# spaces_64
+# staggered_symmetrical
 
-![spaces_64](imgur.com image replace me!)
+![staggered_symmetrical](imgur.com image replace me!)
 
-*A short description of the keyboard/project*
+A 64 key keyboard with symmetrical modifiers, split space bar, Hotswap and with Iso layout.
+   * This layout starts from a standard ISO 60% layout
+   * But split the spacebar in half and add 4 1u keys to each side
+   * This allow the user to have a mostly symmetrical layout
 
 * Keyboard Maintainer: [PeuTit](https://github.com/PeuTit)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported:
+- PCB
+- Pro Micro 5v/16Mhz
+- Hotswap socket
+* Hardware Availability: [Staggered-Keyboard](https://github.com/PeuTit/staggered-keyboard)
 
-Make example for this keyboard (after setting up your build environment):
+Compiling (after setting up your build environment):
 
-    make spaces_64:default
+    qmk compile --keyboard staggered_symmetrical --keymap default
 
-Flashing example for this keyboard:
+Compiling & Flashing:
 
-    make spaces_64:default:flash
+    qmk flash --keyboard staggered_symmetrical --keymap default
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
@@ -22,6 +28,4 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Enter the bootloader in 3 ways:
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+* **Physical reset button**: Briefly short the Ground (GND) and the Reset (RST) pads located on the top left of the micro-controller.
