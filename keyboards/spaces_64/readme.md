@@ -1,6 +1,6 @@
-# staggered_symmetrical
+# Spaces_64
 
-![staggered_symmetrical](imgur.com image replace me!)
+![spaces_64](imgur.com image replace me!)
 
 A 64 key keyboard with symmetrical modifiers, split space bar, Hotswap and with Iso layout.
    * This layout starts from a standard ISO 60% layout
@@ -12,7 +12,7 @@ A 64 key keyboard with symmetrical modifiers, split space bar, Hotswap and with 
 - PCB
 - Pro Micro 5v/16Mhz
 - Hotswap socket
-* Hardware Availability: [Staggered-Keyboard](https://github.com/PeuTit/staggered-keyboard)
+* Hardware Availability: [Spaces_64](https://github.com/PeuTit/spaces-64)
 
 Compiling (after setting up your build environment):
 
@@ -26,6 +26,6 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
+Enter the bootloader:
 
 * **Physical reset button**: Briefly short the Ground (GND) and the Reset (RST) pads located on the top left of the micro-controller.
